@@ -2,8 +2,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Main {
+public class Main{
+    
     public static void main(String[] args) {
+        
         //list of values stored in array list names variable
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Hello", "Hello", "Bye", "Hi",
                 "Bunny", "Bunny","Kiwi","3", "3"));
@@ -13,11 +15,12 @@ public class Main {
 
         //call method remove duplicates
         ArrayList<String> newNames = removeDuplicates(names);
-        //print the new names
+        
+        //print the new list without the repeated names
         System.out.println(newNames);
         System.out.println(getDuplicates(names));
 
-
+        //Get dup-licates in a list of integers
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,3,5,6,7,8,8,8,9,1));
         System.out.println(list);
         System.out.println(getDuplicates(list));
