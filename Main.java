@@ -1,3 +1,4 @@
+//Elena Voinu
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -5,6 +6,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        //list of values stored in array list names variable
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Hello", "Hello", "Bye", "Hi",
                 "Bunny", "Bunny","Kiwi","3", "3"));
 
@@ -27,6 +29,7 @@ public class Main {
 
 
     }
+    // generic method
     public static <T> ArrayList<T> getDuplicates(ArrayList<T> names){
         for (int i = 0; i < names.size(); i ++){
             for (int j = i+1; j < names.size(); j++) {
