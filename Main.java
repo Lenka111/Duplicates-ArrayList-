@@ -3,8 +3,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
-
-
     public static void main(String[] args) {
         //list of values stored in array list names variable
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Hello", "Hello", "Bye", "Hi",
@@ -27,11 +25,12 @@ public class Main {
         ArrayList<Integer> newList = removeDuplicates(list);
         System.out.println(newList);
 
-
-    }
+    }// end main
+    
     // generic method
     public static <T> ArrayList<T> getDuplicates(ArrayList<T> names){
         for (int i = 0; i < names.size(); i ++){
+            //compare each element in the list, and if it's a duplicate return it
             for (int j = i+1; j < names.size(); j++) {
                 if (names.get(i).equals(names.get(j))) {
                     System.out.println("Duplicates in the array :  " + names.get(i));
@@ -56,7 +55,5 @@ public class Main {
         //return the new list
         return  duplicateElements;
         }
-
-
 
     }//end class
